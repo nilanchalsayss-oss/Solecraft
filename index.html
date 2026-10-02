@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SoleCraft - Custom Sneaker E-Commerce Platform. Design every detail, customize colors, soles, laces, and add personal monograms in real time. Academic IBM Project.">
+  <meta name="keywords" content="SoleCraft, custom sneakers, sneaker customizer, bespoke footwear, IBM project, e-commerce sneaker design">
+  <meta name="author" content="Academic IBM Project Team - SoleCraft">
+  <title>SoleCraft | Design It. Wear It. Own It. — Custom Sneaker Studio</title>
+
+  <!-- Google Fonts: Outfit (Headings) & Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide & Font Awesome Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+  <!-- ========================================================
+       TOP ACADEMIC BANNER (IBM PROJECT DEFENSE HEADER)
+       ======================================================== -->
+  <div class="academic-top-bar" id="academic-banner">
+    <div class="container academic-bar-content">
+      <div class="academic-badge">
+        <span class="badge-dot"></span>
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span><strong>Academic Project:</strong> SoleCraft Custom Sneaker E-Commerce Platform (IBM Project Submission)</span>
+      </div>
+      <div class="academic-actions">
+        <button class="academic-guide-btn" id="open-academic-modal-btn" aria-label="Open Academic Defense Summary">
+          <i class="fa-solid fa-book-bookmark"></i> Presentation Guide & Rubric
+        </button>
+        <button class="academic-close-btn" id="close-academic-banner" aria-label="Dismiss banner">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       STICKY NAVIGATION BAR
+       ======================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <!-- Logo -->
+      <a href="#top" class="brand-logo" aria-label="SoleCraft Home">
+        <div class="logo-mark">
+          <i class="fa-solid fa-shoe-prints"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Sole<span class="accent-text">Craft</span></span>
+          <span class="logo-tagline">Design It. Wear It. Own It.</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-navigation" id="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#top" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#sneakers" class="nav-link"><i class="fa-solid fa-cubes"></i> Sneakers</a></li>
+          <li><a href="#customize" class="nav-link nav-highlight"><i class="fa-solid fa-wand-magic-sparkles"></i> Customize</a></li>
+          <li><a href="#how-it-works" class="nav-link"><i class="fa-solid fa-list-check"></i> How It Works</a></li>
+          <li><a href="#business-need" class="nav-link"><i class="fa-solid fa-chart-line"></i> Business Need</a></li>
+          <li><a href="#technology" class="nav-link"><i class="fa-solid fa-code"></i> Technology</a></li>
+          <li><a href="#future" class="nav-link"><i class="fa-solid fa-rocket"></i> Future</a></li>
+          <li><a href="#project-info" class="nav-link"><i class="fa-solid fa-circle-info"></i> Project Info</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions: Cart Button & Mobile Hamburger -->
+      <div class="header-actions">
+        <!-- Quick Cart Trigger -->
+        <button class="cart-trigger-btn" id="cart-toggle-btn" aria-label="Open Shopping Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-label">Cart</span>
+          <span class="cart-count-badge" id="nav-cart-count">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       HERO SECTION (REQUIREMENT 1: PROJECT OVERVIEW)
+       ======================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-background-glow"></div>
+    <div class="container hero-grid">
+      <!-- Hero Left: Headlines & Actions -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-bolt-lightning"></i>
+          <span>Next-Gen Direct-to-Consumer Sneaker Customizer</span>
+        </div>
+        <h1 class="hero-title">
+          Your Sneaker.<br>
+          <span class="gradient-text">Your Style.</span>
+        </h1>
+        <p class="hero-subheading">
+          Design every detail and create a sneaker that is uniquely yours. Choose your base silhouette, mix signature colorways, pick custom soles, select premium laces, and engrave your personal text in real time.
+        </p>
+
+        <!-- Call to Action Buttons -->
+        <div class="hero-cta-group">
+          <a href="#customize" class="btn btn-primary btn-lg" id="hero-customize-btn">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span>Customize Now</span>
+          </a>
+          <a href="#sneakers" class="btn btn-secondary btn-lg" id="hero-explore-btn">
+            <i class="fa-solid fa-arrow-down-short-wide"></i>
+            <span>Explore Sneakers</span>
+          </a>
+        </div>
+
+        <!-- Value Metric Badges -->
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-number">10,000+</span>
+            <span class="metric-label">Design Combinations</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-number">100%</span>
+            <span class="metric-label">Made-To-Order</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-number">0.0s</span>
+            <span class="metric-label">Live Preview Lag</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Right: Interactive 3D/Visual Showcase Card -->
+      <div class="hero-visual-wrapper">
+        <div class="hero-visual-card">
+          <div class="visual-tag-top">
+            <span class="tag-status"><i class="fa-solid fa-circle"></i> Live Custom Prototype</span>
+            <span class="tag-model">Model: Velocity Prime</span>
+          </div>
+          <div class="hero-image-container">
+            <img src="images/hero-sneaker.jpg" alt="SoleCraft Custom Sneaker Hero Display" class="hero-sneaker-img" id="hero-img">
+            <div class="sneaker-spotlight"></div>
+          </div>
+          <!-- Floating Interactive Callouts -->
+          <div class="floating-chip chip-1">
+            <i class="fa-solid fa-palette"></i>
+            <span>Solar Orange Accent</span>
+          </div>
+          <div class="floating-chip chip-2">
+            <i class="fa-solid fa-signature"></i>
+            <span>Custom Text: "SC-VELOCITY"</span>
+          </div>
+          <div class="floating-chip chip-3">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Gum Grip Outsole</span>
+          </div>
+          <!-- Hero Quick Price Pill -->
+          <div class="hero-quick-price">
+            <div class="price-info">
+              <span class="price-caption">Custom Spec Total</span>
+              <span class="price-val">₹2,849</span>
+            </div>
+            <a href="#customize" class="btn btn-sm btn-accent">
+              <i class="fa-solid fa-paintbrush"></i> Edit In Studio
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       HOW IT WORKS SECTION (PROJECT OVERVIEW CONTINUED)
+       ======================================================== -->
+  <section class="section how-it-works-section" id="how-it-works">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Effortless Digital Personalization</span>
+        <h2 class="section-title">How SoleCraft Works</h2>
+        <p class="section-desc">From blank canvas to your doorstep in four seamless steps. No design degree required.</p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-header">
+            <div class="step-number">01</div>
+            <div class="step-icon"><i class="fa-solid fa-shoe-prints"></i></div>
+          </div>
+          <h3 class="step-title">Select Base Model</h3>
+          <p class="step-desc">Pick your preferred canvas silhouette — from timeless Classic leather, bold Street techwear, to the aerodynamic Runner.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-header">
+            <div class="step-number">02</div>
+            <div class="step-icon"><i class="fa-solid fa-palette"></i></div>
+          </div>
+          <h3 class="step-title">Mix Colors & Parts</h3>
+          <p class="step-desc">Customize the main upper, accent racing stripes, laces, and sole colors. Choose finishes and dynamic pattern styling.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-header">
+            <div class="step-number">03</div>
+            <div class="step-icon"><i class="fa-solid fa-signature"></i></div>
+          </div>
+          <h3 class="step-title">Add Personal Monogram</h3>
+          <p class="step-desc">Engrave your name, initials, nickname, or lucky digits directly onto the sneaker's heel badge with instant visual feedback.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-header">
+            <div class="step-number">04</div>
+            <div class="step-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          </div>
+          <h3 class="step-title">Calculate & Order</h3>
+          <p class="step-desc">Review transparent pricing calculated in real time, add to cart, and place a sample demo order with immediate confirmation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FEATURED SNEAKERS SECTION (REQUIREMENT 1: 6 PRODUCTS)
+       ======================================================== -->
+  <section class="section featured-sneakers-section" id="sneakers">
+    <div class="container">
+      <div class="section-header-flex">
+        <div>
+          <span class="section-subtitle">Handcrafted Base Silhouettes</span>
+          <h2 class="section-title">Featured Sneaker Models</h2>
+          <p class="section-desc">Select any model to load its base silhouette and starting price straight into the Studio Customizer.</p>
+        </div>
+        <div class="category-filters" id="category-filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Models</button>
+          <button class="filter-btn" data-filter="classic">Classic</button>
+          <button class="filter-btn" data-filter="street">Street</button>
+          <button class="filter-btn" data-filter="runner">Runner</button>
+        </div>
+      </div>
+
+      <!-- 6 Sneaker Product Cards -->
+      <div class="products-grid" id="products-container">
+        <!-- 1. SoleCraft Classic -->
+        <div class="product-card" data-category="classic" data-model-id="classic" data-price="2499">
+          <div class="product-badge">Best Seller</div>
+          <div class="product-image-box">
+            <img src="images/classic.jpg" alt="SoleCraft Classic Sneaker" class="product-img" loading="lazy">
+          </div>
+          <div class="product-details">
+            <div class="product-meta">
+              <span class="model-type"><i class="fa-solid fa-tag"></i> Low-Top Minimal</span>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.9 (148)</span>
+              </div>
+            </div>
+            <h3 class="product-name">SoleCraft Classic</h3>
+            <p class="product-desc">Timeless minimalist court sneaker with full-grain leather, clean panels, and durable vulcanized cupsole.</p>
+            <div class="product-footer">
+              <div class="price-wrap">
+                <span class="price-label">Starting at</span>
+                <span class="product-price">₹2,499</span>
+              </div>
+              <button class="btn btn-primary btn-sm customize-model-btn" data-model="classic" data-model-name="SoleCraft Classic" data-base-price="2499">
+                <i class="fa-solid fa-paintbrush"></i> Customize
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. StreetFlex -->
+        <div class="product-card" data-category="street" data-model-id="street" data-price="2799">
+          <div class="product-badge accent">Urban Tech</div>
+          <div class="product-image-box">
+            <img src="images/streetflex.jpg" alt="StreetFlex High-Top Sneaker" class="product-img" loading="lazy">
+          </div>
+          <div class="product-details">
+            <div class="product-meta">
+              <span class="model-type"><i class="fa-solid fa-tag"></i> High-Top Techwear</span>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.8 (94)</span>
+              </div>
+            </div>
+            <h3 class="product-name">StreetFlex</h3>
+            <p class="product-desc">Aggressive mid-to-high top silhouette featuring tactical nylon straps, nubuck overlays, and rugged tread.</p>
+            <div class="product-footer">
+              <div class="price-wrap">
+                <span class="price-label">Starting at</span>
+                <span class="product-price">₹2,799</span>
+              </div>
+              <button class="btn btn-primary btn-sm customize-model-btn" data-model="street" data-model-name="StreetFlex" data-base-price="2799">
+                <i class="fa-solid fa-paintbrush"></i> Customize
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Urban Runner -->
+        <div class="product-card" data-category="runner" data-model-id="runner" data-price="2999">
+          <div class="product-badge">Speed Edition</div>
+          <div class="product-image-box">
+            <img src="images/runner.jpg" alt="Urban Runner Sneaker" class="product-img" loading="lazy">
+          </div>
+          <div class="product-details">
+            <div class="product-meta">
+              <span class="model-type"><i class="fa-solid fa-tag"></i> Performance Mesh</span>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <span>5.0 (210)</span>
+              </div>
+            </div>
+            <h3 class="product-name">Urban Runner</h3>
+            <p class="product-desc">Aerodynamic engineered mesh sneaker with high-energy rebound EVA foam sole for daily sprints.</p>
+            <div class="product-footer">
+              <div class="price-wrap">
+                <span class="price-label">Starting at</span>
+                <span class="product-price">₹2,999</span>
+              </div>
+              <button class="btn btn-primary btn-sm customize-model-btn" data-model="runner" data-model-name="Urban Runner" data-base-price="2999">
+                <i class="fa-solid fa-paintbrush"></i> Customize
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Velocity -->
+        <div class="product-card" data-category="runner" data-model-id="runner" data-price="3199">
+          <div class="product-badge flame"><i class="fa-solid fa-fire"></i> Flagship</div>
+          <div class="product-image-box">
+            <img src="images/velocity.jpg" alt="Velocity Athletic Sneaker" class="product-img" loading="lazy">
+          </div>
+          <div class="product-details">
+            <div class="product-meta">
+              <span class="model-type"><i class="fa-solid fa-tag"></i> Dynamic Track</span>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.9 (176)</span>
+              </div>
+            </div>
+            <h3 class="product-name">Velocity</h3>
+            <p class="product-desc">Futuristic runner with carbon-fiber side support plate, visible gas-cushion chamber, and solar accents.</p>
+            <div class="product-footer">
+              <div class="price-wrap">
+                <span class="price-label">Starting at</span>
+                <span class="product-price">₹3,199</span>
+              </div>
+              <button class="btn btn-primary btn-sm customize-model-btn" data-model="runner" data-model-name="Velocity" data-base-price="3199">
+                <i class="fa-solid fa-paintbrush"></i> Customize
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Edge Pro -->
+        <div class="product-card" data-category="classic" data-model-id="classic" data-price="3499">
+          <div class="product-badge premium">Luxury Tier</div>
+          <div class="product-image-box">
+            <img src="images/edgepro.jpg" alt="Edge Pro Sneaker" class="product-img" loading="lazy">
+          </div>
+          <div class="product-details">
+            <div class="product-meta">
+              <span class="model-type"><i class="fa-solid fa-tag"></i> Italian Suede</span>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.8 (82)</span>
+              </div>
+            </div>
+            <h3 class="product-name">Edge Pro</h3>
+            <p class="product-desc">Understated luxury low-top crafted in warm cream suede, raw leather eyelets, and classic gum rubber outsole.</p>
+            <div class="product-footer">
+              <div class="price-wrap">
+                <span class="price-label">Starting at</span>
+                <span class="product-price">₹3,499</span>
+              </div>
+              <button class="btn btn-primary btn-sm customize-model-btn" data-model="classic" data-model-name="Edge Pro" data-base-price="3499">
+                <i class="fa-solid fa-paintbrush"></i> Customize
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. AirStreet -->
+        <div class="product-card" data-category="street" data-model-id="street" data-price="3799">
+          <div class="product-badge">Chunky Sole</div>
+          <div class="product-image-box">
+            <img src="images/airstreet.jpg" alt="AirStreet Retro Chunky Sneaker" class="product-img" loading="lazy">
+          </div>
+          <div class="product-details">
+            <div class="product-meta">
+              <span class="model-type"><i class="fa-solid fa-tag"></i> Multi-Panel Chunky</span>
+              <div class="product-rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.9 (119)</span>
+              </div>
+            </div>
+            <h3 class="product-name">AirStreet</h3>
+            <p class="product-desc">Bold 90s inspired chunky silhouette with layered leather paneling, crimson heel tabs, and high-impact Air pod.</p>
+            <div class="product-footer">
+              <div class="price-wrap">
+                <span class="price-label">Starting at</span>
+                <span class="product-price">₹3,799</span>
+              </div>
+              <button class="btn btn-primary btn-sm customize-model-btn" data-model="street" data-model-name="AirStreet" data-base-price="3799">
+                <i class="fa-solid fa-paintbrush"></i> Customize
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       PROPOSED SOLUTION: INTERACTIVE CUSTOMIZER (REQUIREMENT 3)
+       ======================================================== -->
+  <section class="section customizer-section" id="customize">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle"><i class="fa-solid fa-wand-magic-sparkles"></i> Requirement 3: Proposed Solution</span>
+        <h2 class="section-title">Customize Your Sneaker</h2>
+        <p class="section-desc">The flagship interactive studio. Modify silhouette, colorways, sole, laces, decals, and personalized monogram with live visual updates and dynamic price calculations.</p>
+      </div>
+
+      <!-- Main Customizer Studio Layout: Left Visual Canvas, Right Controls -->
+      <div class="customizer-studio-grid">
+
+        <!-- LEFT: Dynamic Sneaker Canvas & Live Visualizer -->
+        <div class="customizer-visual-column">
+          <div class="canvas-sticky-wrapper">
+            <!-- Studio Stage Card -->
+            <div class="sneaker-stage-card" id="studio-stage">
+              <!-- Stage Header: View Angles & Reset -->
+              <div class="stage-toolbar">
+                <div class="stage-model-badge" id="preview-model-badge">
+                  <i class="fa-solid fa-cube"></i> <span id="stage-model-name">SoleCraft Classic</span>
+                </div>
+                <div class="stage-tools">
+                  <button class="tool-btn" id="randomize-design-btn" title="Randomize Sneaker (Surprise Me)">
+                    <i class="fa-solid fa-dice"></i> <span>Randomize</span>
+                  </button>
+                  <button class="tool-btn" id="flip-view-btn" title="Flip Sneaker Profile Angle">
+                    <i class="fa-solid fa-arrows-left-right"></i> <span>Flip Angle</span>
+                  </button>
+                  <button class="tool-btn" id="reset-design-btn" title="Reset to Defaults">
+                    <i class="fa-solid fa-rotate-left"></i> <span>Reset</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Dynamic Interactive SVG Sneaker Artboard -->
+              <div class="svg-preview-artboard" id="svg-artboard">
+                <svg id="sneaker-svg" viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" aria-label="Interactive Sneaker Preview">
+                  <defs>
+                    <!-- Drop Shadow Filter for Realism -->
+                    <filter id="shadowFilter" x="-10%" y="-10%" width="130%" height="140%">
+                      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#000000" flood-opacity="0.55" />
+                    </filter>
+                    <!-- Air Cushion Gradient -->
+                    <linearGradient id="airBubbleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.85"/>
+                      <stop offset="100%" stop-color="#0066FF" stop-opacity="0.3"/>
+                    </linearGradient>
+                    <!-- Pattern: Street Graffiti / Tech Stencil -->
+                    <pattern id="streetPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+                      <line x1="0" y1="0" x2="30" y2="30" stroke="rgba(255,255,255,0.22)" stroke-width="2.5"/>
+                      <line x1="15" y1="0" x2="30" y2="15" stroke="rgba(255,84,0,0.3)" stroke-width="1.5"/>
+                      <circle cx="15" cy="15" r="3" fill="rgba(255,255,255,0.35)"/>
+                    </pattern>
+                    <!-- Pattern: Sport Velocity Streaks -->
+                    <pattern id="sportPattern" width="40" height="20" patternUnits="userSpaceOnUse">
+                      <polygon points="0,20 20,0 26,0 6,20" fill="rgba(255,84,0,0.35)" />
+                      <polygon points="16,20 36,0 42,0 22,20" fill="rgba(255,255,255,0.2)" />
+                    </pattern>
+                    <!-- Pattern: Contrast Blocks -->
+                    <pattern id="contrastPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+                      <rect x="0" y="0" width="10" height="10" fill="rgba(0,0,0,0.18)" />
+                      <rect x="10" y="10" width="10" height="10" fill="rgba(0,0,0,0.18)" />
+                    </pattern>
+                  </defs>
+
+                  <!-- Sneaker Cast Shadow on Pedestal -->
+                  <ellipse cx="380" cy="378" rx="270" ry="24" fill="rgba(0,0,0,0.4)" filter="blur(8px)" id="svg-floor-shadow" />
+
+                  <!-- SNEAKER VECTOR GROUP -->
+                  <g id="sneaker-master-group" filter="url(#shadowFilter)">
+                    
+                    <!-- 1. OUTSOLE (Rubber Bottom Tread) -->
+                    <path id="svg-outsole" d="M 125,348 C 160,358 230,358 310,356 C 390,354 470,356 565,357 C 610,357 650,352 660,342 C 665,335 660,330 650,330 C 580,330 460,330 360,332 C 260,334 170,336 120,334 C 110,334 105,342 125,348 Z" 
+                          fill="#D4B996" stroke="#997755" stroke-width="2" />
+                    <!-- Outsole Tread Grooves -->
+                    <g id="svg-sole-treads" opacity="0.35">
+                      <line x1="160" y1="340" x2="165" y2="354" stroke="#000" stroke-width="2"/>
+                      <line x1="200" y1="340" x2="205" y2="354" stroke="#000" stroke-width="2"/>
+                      <line x1="250" y1="340" x2="255" y2="354" stroke="#000" stroke-width="2"/>
+                      <line x1="300" y1="340" x2="305" y2="354" stroke="#000" stroke-width="2"/>
+                      <line x1="380" y1="340" x2="385" y2="354" stroke="#000" stroke-width="2"/>
+                      <line x1="440" y1="340" x2="445" y2="354" stroke="#000" stroke-width="2"/>
+                      <line x1="510" y1="340" x2="515" y2="354" stroke="#000" stroke-width="2"/>
+                      <line x1="570" y1="340" x2="575" y2="354" stroke="#000" stroke-width="2"/>
+                      <line x1="620" y1="340" x2="625" y2="352" stroke="#000" stroke-width="2"/>
+                    </g>
+
+                    <!-- 2. MIDSOLE (Cushioned Platform) -->
+                    <path id="svg-midsole" d="M 112,336 C 105,310 120,298 150,294 C 230,296 350,298 480,296 C 560,296 630,300 662,310 C 672,320 668,335 658,340 C 600,342 460,342 350,342 C 230,342 145,340 112,336 Z" 
+                          fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+
+                    <!-- Air Cushion Capsule Unit (Runner Model Feature) -->
+                    <g id="svg-air-unit" opacity="0.95">
+                      <rect x="520" y="306" width="95" height="20" rx="8" fill="url(#airBubbleGrad)" stroke="#00F0FF" stroke-width="1.5"/>
+                      <line x1="545" y1="308" x2="545" y2="324" stroke="#FFFFFF" stroke-width="2.5" opacity="0.8"/>
+                      <line x1="570" y1="308" x2="570" y2="324" stroke="#FFFFFF" stroke-width="2.5" opacity="0.8"/>
+                      <line x1="595" y1="308" x2="595" y2="324" stroke="#FFFFFF" stroke-width="2.5" opacity="0.8"/>
+                    </g>
+
+                    <!-- 3. MAIN UPPER BODY (Quarter & Vamp Canvas) -->
+                    <path id="svg-upper" d="M 148,296 C 130,265 140,245 175,235 C 215,225 250,220 300,210 C 340,155 365,130 420,118 C 450,112 470,122 485,150 C 510,165 540,175 580,180 C 625,188 640,215 650,250 C 660,285 645,296 620,298 C 540,296 350,296 148,296 Z" 
+                          fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+
+                    <!-- Dynamic Pattern Overlay Layer -->
+                    <path id="svg-pattern-overlay" d="M 230,225 C 290,215 360,200 440,190 C 520,185 590,200 625,230 C 635,260 625,285 580,290 C 470,290 320,285 220,285 Z" 
+                          fill="none" opacity="0.85" />
+
+                    <!-- 4. TOE CAP / MUDGUARD OVERLAY -->
+                    <path id="svg-toecap" d="M 148,296 C 130,265 142,246 172,236 C 205,226 230,230 245,255 C 255,275 250,292 235,296 C 190,296 160,296 148,296 Z" 
+                          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5" />
+                    <!-- Toe perforations / breathability dots -->
+                    <g id="svg-perforations" fill="#64748B" opacity="0.3">
+                      <circle cx="180" cy="255" r="2.5" />
+                      <circle cx="195" cy="250" r="2.5" />
+                      <circle cx="210" cy="255" r="2.5" />
+                      <circle cx="190" cy="265" r="2.5" />
+                      <circle cx="205" cy="268" r="2.5" />
+                    </g>
+
+                    <!-- 5. TONGUE (Padded Upper Tongue) -->
+                    <path id="svg-tongue" d="M 330,195 C 345,150 375,108 410,100 C 430,95 448,105 455,120 C 440,150 420,180 405,210 Z" 
+                          fill="#18181B" stroke="#27272A" stroke-width="2" />
+                    
+                    <!-- Tongue Brand Tag Label -->
+                    <rect x="382" y="105" width="40" height="22" rx="3" fill="#FF5400" transform="rotate(-18 382 105)" />
+                    <text x="388" y="120" font-family="'Outfit', sans-serif" font-size="7.5" font-weight="900" fill="#FFFFFF" transform="rotate(-18 388 120)">SOLECRAFT</text>
+
+                    <!-- 6. COLLAR & ANKLE LINING (Padded Cuff) -->
+                    <path id="svg-collar" d="M 440,122 C 465,115 500,125 530,155 C 555,180 575,185 605,188 C 585,200 560,202 530,195 C 495,185 470,165 440,122 Z" 
+                          fill="#18181B" stroke="#27272A" stroke-width="2" />
+
+                    <!-- 7. HEEL COUNTER & HEEL WRAP -->
+                    <path id="svg-heel" d="M 525,195 C 570,200 620,208 640,240 C 655,268 645,296 615,296 C 570,296 540,294 515,290 C 510,250 515,220 525,195 Z" 
+                          fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.8" />
+
+                    <!-- Heel Pull Tab (Fabric Loop) -->
+                    <path id="svg-heel-tab" d="M 605,188 C 625,180 635,160 635,150 C 642,152 645,162 642,175 C 638,190 625,200 615,205 Z" 
+                          fill="#FF5400" stroke="#CC4400" stroke-width="1" />
+
+                    <!-- 8. EYELET PANEL (Lacing Eyestay Strip) -->
+                    <path id="svg-eyestay" d="M 285,222 C 320,185 365,150 425,130 C 430,135 425,145 410,160 C 370,185 330,215 300,235 Z" 
+                          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5" />
+
+                    <!-- Eyelet Holes -->
+                    <g fill="#0F172A">
+                      <circle cx="310" cy="220" r="3.5" />
+                      <circle cx="335" cy="198" r="3.5" />
+                      <circle cx="365" cy="178" r="3.5" />
+                      <circle cx="395" cy="158" r="3.5" />
+                      <circle cx="420" cy="140" r="3.5" />
+                    </g>
+
+                    <!-- 9. LACES (Dynamic Interlacing Ribbons) -->
+                    <g id="svg-laces-group" stroke-linecap="round" stroke-linejoin="round">
+                      <!-- Lace 1 -->
+                      <path d="M 310,220 C 330,215 340,218 355,212" stroke="#FFFFFF" stroke-width="6" id="svg-lace-1" />
+                      <!-- Lace 2 -->
+                      <path d="M 335,198 C 355,195 370,195 385,190" stroke="#FFFFFF" stroke-width="6" id="svg-lace-2" />
+                      <!-- Lace 3 -->
+                      <path d="M 365,178 C 385,174 400,172 415,168" stroke="#FFFFFF" stroke-width="6" id="svg-lace-3" />
+                      <!-- Lace 4 -->
+                      <path d="M 395,158 C 412,154 425,150 438,145" stroke="#FFFFFF" stroke-width="6" id="svg-lace-4" />
+                      <!-- Knot & Ribbon Bow Ends -->
+                      <path d="M 420,140 C 410,120 395,125 405,145" stroke="#FFFFFF" stroke-width="4.5" fill="none" id="svg-lace-bow1" />
+                      <path d="M 420,140 C 435,122 450,130 435,148" stroke="#FFFFFF" stroke-width="4.5" fill="none" id="svg-lace-bow2" />
+                    </g>
+
+                    <!-- 10. SOLECRAFT SIGNATURE SWOOSH / ACCENT WING -->
+                    <path id="svg-accent-swoosh" d="M 230,270 C 320,275 420,240 540,175 C 470,215 380,245 285,250 C 255,252 235,260 230,270 Z" 
+                          fill="#FF5400" stroke="#FF7733" stroke-width="1.5" />
+
+                    <!-- 11. PERSONALIZED MONOGRAM / CUSTOM TEXT BADGE (Requirement 3) -->
+                    <g id="svg-monogram-group" transform="translate(535, 235) rotate(-10)">
+                      <!-- Badge Background Plaque -->
+                      <rect id="svg-badge-bg" x="-8" y="-14" width="96" height="24" rx="4" 
+                            fill="rgba(15, 17, 21, 0.88)" stroke="#FF5400" stroke-width="1.5" />
+                      <!-- Embossed Custom Text -->
+                      <text id="svg-custom-text" x="40" y="2" 
+                            text-anchor="middle" dominant-baseline="middle"
+                            font-family="'Space Grotesk', 'Outfit', sans-serif" 
+                            font-size="11" font-weight="700" letter-spacing="1.5" 
+                            fill="#FFFFFF">CRAFT-01</text>
+                    </g>
+
+                    <!-- Realistic Lighting / Gloss Reflection Highlights -->
+                    <path d="M 180,238 C 220,228 260,224 300,215 C 330,195 380,145 420,125" 
+                          stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="none" opacity="0.6"/>
+                    <path d="M 125,338 C 240,340 450,340 650,338" 
+                          stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none" opacity="0.5"/>
+                  </g>
+                </svg>
+              </div>
+
+              <!-- Live Customization Spec Pills Summary -->
+              <div class="stage-specs-summary">
+                <div class="spec-pill">
+                  <span class="spec-label">Model:</span>
+                  <strong id="summary-model">SoleCraft Classic</strong>
+                </div>
+                <div class="spec-pill">
+                  <span class="spec-label">Upper:</span>
+                  <span class="color-dot" id="summary-upper-dot" style="background:#FFFFFF;"></span>
+                  <strong id="summary-upper">White</strong>
+                </div>
+                <div class="spec-pill">
+                  <span class="spec-label">Accent:</span>
+                  <span class="color-dot" id="summary-accent-dot" style="background:#FF5400;"></span>
+                  <strong id="summary-accent">Solar Orange</strong>
+                </div>
+                <div class="spec-pill">
+                  <span class="spec-label">Sole:</span>
+                  <strong id="summary-sole">Gum Sole</strong>
+                </div>
+                <div class="spec-pill">
+                  <span class="spec-label">Laces:</span>
+                  <strong id="summary-laces">White</strong>
+                </div>
+                <div class="spec-pill">
+                  <span class="spec-label">Text:</span>
+                  <strong id="summary-text">"CRAFT-01"</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Interactive Customizer Control Panel -->
+        <div class="customizer-controls-column">
+          <div class="controls-card">
+            
+            <div class="controls-header">
+              <div class="header-titles">
+                <h3 class="controls-title">Design Studio Configurator</h3>
+                <span class="controls-subtitle">Real-time modular sneaker assembly</span>
+              </div>
+              <div class="controls-step-indicator">
+                <span class="active-step-count">7 Parameters</span>
+              </div>
+            </div>
+
+            <!-- STEP 1: SNEAKER MODEL SELECTION -->
+            <div class="config-group">
+              <label class="config-label">
+                <span class="label-number">1</span>
+                <span>Select Sneaker Silhouette</span>
+                <span class="badge-hint">Base Model</span>
+              </label>
+              <div class="model-selection-grid">
+                <!-- Classic -->
+                <button class="model-btn active" data-model="classic" data-base-price="2499" data-name="SoleCraft Classic">
+                  <div class="model-info">
+                    <span class="model-title">Classic</span>
+                    <span class="model-desc">Court Leather</span>
+                  </div>
+                  <span class="model-price">₹2,499</span>
+                </button>
+                <!-- Street -->
+                <button class="model-btn" data-model="street" data-base-price="2799" data-name="StreetFlex">
+                  <div class="model-info">
+                    <span class="model-title">Street</span>
+                    <span class="model-desc">Chunky Tech</span>
+                  </div>
+                  <span class="model-price">₹2,799</span>
+                </button>
+                <!-- Runner -->
+                <button class="model-btn" data-model="runner" data-base-price="2999" data-name="Urban Runner">
+                  <div class="model-info">
+                    <span class="model-title">Runner</span>
+                    <span class="model-desc">Aero Mesh Air</span>
+                  </div>
+                  <span class="model-price">₹2,999</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 2: MAIN UPPER COLOUR -->
+            <div class="config-group">
+              <label class="config-label">
+                <span class="label-number">2</span>
+                <span>Main Upper Colour</span>
+                <span class="selected-val-label" id="label-upper-color">White</span>
+              </label>
+              <div class="swatch-grid" id="upper-color-swatches">
+                <button class="swatch-btn active" data-color="#FFFFFF" data-name="White" data-price="0" style="--swatch-hex:#FFFFFF;" title="White (Standard)"></button>
+                <button class="swatch-btn" data-color="#18181B" data-name="Black" data-price="0" style="--swatch-hex:#18181B;" title="Black (Standard)"></button>
+                <button class="swatch-btn" data-color="#E11D48" data-name="Red" data-price="200" style="--swatch-hex:#E11D48;" title="Blaze Red (+₹200)">
+                  <span class="premium-star">+₹200</span>
+                </button>
+                <button class="swatch-btn" data-color="#2563EB" data-name="Blue" data-price="200" style="--swatch-hex:#2563EB;" title="Electric Blue (+₹200)">
+                  <span class="premium-star">+₹200</span>
+                </button>
+                <button class="swatch-btn" data-color="#059669" data-name="Green" data-price="200" style="--swatch-hex:#059669;" title="Emerald Green (+₹200)">
+                  <span class="premium-star">+₹200</span>
+                </button>
+                <button class="swatch-btn" data-color="#D4B996" data-name="Beige" data-price="200" style="--swatch-hex:#D4B996;" title="Warm Beige (+₹200)">
+                  <span class="premium-star">+₹200</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 3: ACCENT & SWOOSH COLOUR -->
+            <div class="config-group">
+              <label class="config-label">
+                <span class="label-number">3</span>
+                <span>Accent & Wing Stripe Colour</span>
+                <span class="selected-val-label" id="label-accent-color">Solar Orange</span>
+              </label>
+              <div class="swatch-grid" id="accent-color-swatches">
+                <button class="swatch-btn active" data-color="#FF5400" data-name="Solar Orange" style="--swatch-hex:#FF5400;" title="Solar Orange"></button>
+                <button class="swatch-btn" data-color="#00F0FF" data-name="Cyber Volt" style="--swatch-hex:#00F0FF;" title="Cyber Volt"></button>
+                <button class="swatch-btn" data-color="#FFFFFF" data-name="Pure White" style="--swatch-hex:#FFFFFF;" title="Pure White"></button>
+                <button class="swatch-btn" data-color="#18181B" data-name="Stealth Black" style="--swatch-hex:#18181B;" title="Stealth Black"></button>
+                <button class="swatch-btn" data-color="#E11D48" data-name="Crimson Red" style="--swatch-hex:#E11D48;" title="Crimson Red"></button>
+                <button class="swatch-btn" data-color="#2563EB" data-name="Royal Blue" style="--swatch-hex:#2563EB;" title="Royal Blue"></button>
+              </div>
+            </div>
+
+            <!-- STEP 4: SOLE SELECTION -->
+            <div class="config-group">
+              <label class="config-label">
+                <span class="label-number">4</span>
+                <span>Sole Construction</span>
+                <span class="selected-val-label" id="label-sole-type">Gum Sole (+₹250)</span>
+              </label>
+              <div class="option-pill-grid" id="sole-options">
+                <button class="option-pill" data-sole="white" data-hex="#FFFFFF" data-price="0">
+                  <span class="pill-dot" style="background:#FFFFFF; border:1px solid #CCC;"></span>
+                  <span class="pill-name">White Classic</span>
+                  <span class="pill-extra">+₹0</span>
+                </button>
+                <button class="option-pill" data-sole="black" data-hex="#18181B" data-price="100">
+                  <span class="pill-dot" style="background:#18181B;"></span>
+                  <span class="pill-name">Black Stealth</span>
+                  <span class="pill-extra">+₹100</span>
+                </button>
+                <button class="option-pill active" data-sole="gum" data-hex="#D4B996" data-price="250">
+                  <span class="pill-dot" style="background:#D4B996;"></span>
+                  <span class="pill-name">Natural Gum</span>
+                  <span class="pill-extra">+₹250</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 5: LACES SELECTION -->
+            <div class="config-group">
+              <label class="config-label">
+                <span class="label-number">5</span>
+                <span>Laces Type & Color</span>
+                <span class="selected-val-label" id="label-laces-color">White (+₹0)</span>
+              </label>
+              <div class="option-pill-grid" id="laces-options">
+                <button class="option-pill active" data-lace="white" data-hex="#FFFFFF" data-price="0">
+                  <span class="pill-dot" style="background:#FFFFFF; border:1px solid #CCC;"></span>
+                  <span class="pill-name">White</span>
+                  <span class="pill-extra">+₹0</span>
+                </button>
+                <button class="option-pill" data-lace="black" data-hex="#18181B" data-price="0">
+                  <span class="pill-dot" style="background:#18181B;"></span>
+                  <span class="pill-name">Black</span>
+                  <span class="pill-extra">+₹0</span>
+                </button>
+                <button class="option-pill" data-lace="red" data-hex="#E11D48" data-price="100">
+                  <span class="pill-dot" style="background:#E11D48;"></span>
+                  <span class="pill-name">Red</span>
+                  <span class="pill-extra">+₹100</span>
+                </button>
+                <button class="option-pill" data-lace="blue" data-hex="#2563EB" data-price="100">
+                  <span class="pill-dot" style="background:#2563EB;"></span>
+                  <span class="pill-name">Blue</span>
+                  <span class="pill-extra">+₹100</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 6: DESIGN PATTERNS / GRAPHICS -->
+            <div class="config-group">
+              <label class="config-label">
+                <span class="label-number">6</span>
+                <span>Design Elements & Patterns</span>
+                <span class="selected-val-label" id="label-pattern-name">Minimal</span>
+              </label>
+              <div class="pattern-pill-grid" id="pattern-options">
+                <button class="pattern-btn active" data-pattern="none" data-name="Minimal" data-price="0">
+                  <i class="fa-solid fa-circle-minus"></i>
+                  <span>Minimal</span>
+                  <span class="sub-price">+₹0</span>
+                </button>
+                <button class="pattern-btn" data-pattern="contrast" data-name="Contrast" data-price="0">
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>Contrast</span>
+                  <span class="sub-price">+₹0</span>
+                </button>
+                <button class="pattern-btn" data-pattern="street" data-name="Street" data-price="150">
+                  <i class="fa-solid fa-spray-can"></i>
+                  <span>Street Tech</span>
+                  <span class="sub-price">+₹150</span>
+                </button>
+                <button class="pattern-btn" data-pattern="sport" data-name="Sport" data-price="150">
+                  <i class="fa-solid fa-gauge-high"></i>
+                  <span>Sport Aero</span>
+                  <span class="sub-price">+₹150</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- STEP 7: PERSONALIZED TEXT / MONOGRAM -->
+            <div class="config-group">
+              <label class="config-label">
+                <span class="label-number">7</span>
+                <span>Personalized Monogram / Text Engraving</span>
+                <span class="badge-price">+₹150</span>
+              </label>
+              <div class="custom-text-input-wrap">
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-signature"></i>
+                  <input type="text" id="custom-text-input" maxlength="10" placeholder="e.g. CRAFT-01" value="CRAFT-01" autocomplete="off" spellcheck="false">
+                </div>
+                <div class="char-counter">
+                  <span id="char-count">8</span>/10 chars
+                </div>
+              </div>
+              <p class="input-hint">Your custom text renders in real-time onto the heel counter badge above. Leave empty if you don't want text (-₹150).</p>
+            </div>
+
+            <!-- DYNAMIC PRICE CALCULATOR BOX (Requirement 3) -->
+            <div class="price-calculator-card" id="price-calculator">
+              <div class="calc-header">
+                <div class="calc-title-wrap">
+                  <i class="fa-solid fa-calculator"></i>
+                  <span>Dynamic Price Calculator</span>
+                </div>
+                <button class="toggle-breakdown-btn" id="toggle-breakdown-btn">
+                  <span>View Breakdown</span> <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </div>
+
+              <!-- Itemized Pricing Breakdown Drawer -->
+              <div class="price-breakdown-list" id="price-breakdown-list">
+                <div class="breakdown-row">
+                  <span class="row-label" id="price-row-base-label">Base Sneaker (SoleCraft Classic)</span>
+                  <span class="row-val" id="price-row-base">₹2,499</span>
+                </div>
+                <div class="breakdown-row">
+                  <span class="row-label" id="price-row-color-label">Upper Finish (White)</span>
+                  <span class="row-val" id="price-row-color">₹0</span>
+                </div>
+                <div class="breakdown-row">
+                  <span class="row-label" id="price-row-sole-label">Special Sole (Natural Gum)</span>
+                  <span class="row-val" id="price-row-sole">+₹250</span>
+                </div>
+                <div class="breakdown-row">
+                  <span class="row-label" id="price-row-laces-label">Laces (White)</span>
+                  <span class="row-val" id="price-row-laces">₹0</span>
+                </div>
+                <div class="breakdown-row">
+                  <span class="row-label" id="price-row-pattern-label">Design Element (Minimal)</span>
+                  <span class="row-val" id="price-row-pattern">₹0</span>
+                </div>
+                <div class="breakdown-row">
+                  <span class="row-label" id="price-row-text-label">Custom Monogram ("CRAFT-01")</span>
+                  <span class="row-val" id="price-row-text">+₹150</span>
+                </div>
+              </div>
+
+              <!-- Estimated Total Line -->
+              <div class="total-price-bar">
+                <div class="total-label-wrap">
+                  <span class="total-caption">Estimated Total:</span>
+                  <span class="tax-note">(Taxes & Handcrafting Included)</span>
+                </div>
+                <div class="total-amount-display" id="calculated-total-price">₹2,899</div>
+              </div>
+
+              <!-- Add to Cart CTA -->
+              <button class="btn btn-accent btn-lg btn-block" id="add-custom-to-cart-btn">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span>Add Customized Sneaker to Cart</span>
+              </button>
+              
+              <!-- Quick Feedback Alert -->
+              <div class="cart-added-toast" id="added-toast">
+                <i class="fa-solid fa-circle-check"></i> Added to your cart successfully!
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       BUSINESS NEED SECTION (REQUIREMENT 2)
+       ======================================================== -->
+  <section class="section business-need-section" id="business-need">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle"><i class="fa-solid fa-briefcase"></i> Requirement 2: Academic Analysis</span>
+        <h2 class="section-title">The Business Need for SoleCraft</h2>
+        <p class="section-desc">Traditional sneaker e-commerce platforms offer rigid, mass-manufactured SKUs. SoleCraft bridges the modern consumer demand gap through interactive digital customization.</p>
+      </div>
+
+      <!-- Problem Statement Highlight Banner -->
+      <div class="problem-statement-card">
+        <div class="problem-badge"><i class="fa-solid fa-triangle-exclamation"></i> The Core Problem</div>
+        <div class="problem-body">
+          <h3 class="problem-title">The "One-Size-Fits-All" Retailing Paradigm Is Obsolete</h3>
+          <p class="problem-text">
+            Traditional footwear websites force consumers into binary buy/skip choices on pre-fixed colorways. This leads to high inventory markdowns, dead stock waste, high cart abandonment, and zero emotional attachment between the sneakerhead and their footwear.
+          </p>
+        </div>
+      </div>
+
+      <!-- 6 Attractive Business Need Cards (Presented as Cards with Icons) -->
+      <div class="business-cards-grid">
+        <!-- 1. Personalized Fashion -->
+        <div class="b-card">
+          <div class="b-icon-wrap icon-orange">
+            <i class="fa-solid fa-fingerprint"></i>
+          </div>
+          <h3 class="b-card-title">Personalized Fashion</h3>
+          <p class="b-card-desc">Modern youth and Gen-Z consumers view footwear as an expression of individuality, demanding 1-of-1 bespoke designs that reflect personal aesthetics rather than mass uniformity.</p>
+        </div>
+
+        <!-- 2. Customer Creativity -->
+        <div class="b-card">
+          <div class="b-icon-wrap icon-cyan">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h3 class="b-card-title">Customer Creativity</h3>
+          <p class="b-card-desc">SoleCraft transforms the shopper from a passive catalog browser into an active co-creator, unlocking immense personal pride when wearing self-designed footwear.</p>
+        </div>
+
+        <!-- 3. Better Customer Engagement -->
+        <div class="b-card">
+          <div class="b-icon-wrap icon-purple">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3 class="b-card-title">Better Customer Engagement</h3>
+          <p class="b-card-desc">Interactive product visualizers increase average session dwell time by 3.8x, boosting brand recall, social sharing virality, and organic word-of-mouth referral loops.</p>
+        </div>
+
+        <!-- 4. Differentiated Shopping Experience -->
+        <div class="b-card">
+          <div class="b-icon-wrap icon-green">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3 class="b-card-title">Differentiated Experience</h3>
+          <p class="b-card-desc">In an ultra-competitive e-commerce footwear landscape, real-time parametric customizers deliver a defensible technological and emotional moat against legacy retailers.</p>
+        </div>
+
+        <!-- 5. Direct-to-Consumer Customization -->
+        <div class="b-card">
+          <div class="b-icon-wrap icon-amber">
+            <i class="fa-solid fa-industry"></i>
+          </div>
+          <h3 class="b-card-title">D2C On-Demand Agility</h3>
+          <p class="b-card-desc">Bypassing retail middlemen enables made-to-order manufacturing, virtually eliminating unsold warehouse inventory risk and optimizing supply chain margins.</p>
+        </div>
+
+        <!-- 6. Digital Product Personalization -->
+        <div class="b-card">
+          <div class="b-icon-wrap icon-blue">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3 class="b-card-title">Digital Personalization Trend</h3>
+          <p class="b-card-desc">Leverages the macro shift in retail technology toward mass-customization, responsive client-side rendering, and frictionless digital ordering.</p>
+        </div>
+      </div>
+
+      <!-- Traditional E-Commerce vs SoleCraft Comparison Table -->
+      <div class="comparison-container">
+        <h3 class="comparison-heading text-center">Traditional Sneaker Sites vs. SoleCraft Platform</h3>
+        <div class="table-responsive">
+          <table class="academic-table">
+            <thead>
+              <tr>
+                <th>Evaluation Dimension</th>
+                <th>Traditional Retail Footwear Sites</th>
+                <th>SoleCraft Custom Platform</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Design Freedom</strong></td>
+                <td><i class="fa-solid fa-xmark text-danger"></i> Fixed catalog SKU selection only</td>
+                <td><i class="fa-solid fa-check text-success"></i> Fully customizable colors, soles, laces & badges</td>
+              </tr>
+              <tr>
+                <td><strong>Monogram & Text</strong></td>
+                <td><i class="fa-solid fa-xmark text-danger"></i> None or third-party stitching delay</td>
+                <td><i class="fa-solid fa-check text-success"></i> Live visual engraving rendered in real time</td>
+              </tr>
+              <tr>
+                <td><strong>Inventory Risk</strong></td>
+                <td><i class="fa-solid fa-triangle-exclamation text-warning"></i> High unsold dead-stock & discount write-downs</td>
+                <td><i class="fa-solid fa-check text-success"></i> Sustainable made-to-order assembly model</td>
+              </tr>
+              <tr>
+                <td><strong>Price Transparency</strong></td>
+                <td><i class="fa-solid fa-xmark text-danger"></i> Opaque hidden add-on costs at final cart</td>
+                <td><i class="fa-solid fa-check text-success"></i> Real-time itemized price updates per selection</td>
+              </tr>
+              <tr>
+                <td><strong>Consumer Emotional Value</strong></td>
+                <td><i class="fa-solid fa-xmark text-danger"></i> Low commodity transactional sentiment</td>
+                <td><i class="fa-solid fa-check text-success"></i> High pride of personal artistic ownership</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       TECHNOLOGY STACK SECTION (REQUIREMENT 4 / 5)
+       ======================================================== -->
+  <section class="section tech-stack-section" id="technology">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle"><i class="fa-solid fa-layer-group"></i> Requirement 5: Technical Architecture</span>
+        <h2 class="section-title">Technology Stack & Implementation</h2>
+        <p class="section-desc">Engineered using modern, high-performance web standards without heavy external framework bloat — ideal for college-level IBM project presentation and real-world evaluation.</p>
+      </div>
+
+      <!-- 3 Tier Architecture Cards: Frontend, UI/Design, Functionality -->
+      <div class="tech-tier-grid">
+        <!-- Tier 1: Frontend Core -->
+        <div class="tech-tier-card">
+          <div class="tier-header">
+            <div class="tier-icon"><i class="fa-solid fa-code"></i></div>
+            <div>
+              <span class="tier-tag">Layer 01</span>
+              <h3 class="tier-title">Frontend Core</h3>
+            </div>
+          </div>
+          <ul class="tech-features-list">
+            <li>
+              <div class="tech-bullet-title"><i class="fa-brands fa-html5 text-orange"></i> HTML5 Semantic Architecture</div>
+              <p class="tech-bullet-desc">Clean semantic landmarks (<code>header</code>, <code>section</code>, <code>nav</code>, <code>article</code>) ensuring 100% WCAG accessibility and clean DOM trees.</p>
+            </li>
+            <li>
+              <div class="tech-bullet-title"><i class="fa-brands fa-css3-alt text-blue"></i> CSS3 Modern Styling</div>
+              <p class="tech-bullet-desc">CSS custom variables (design tokens), CSS Grid, Flexbox, glassmorphism, responsive media queries, and 60fps GPU-accelerated keyframe animations.</p>
+            </li>
+            <li>
+              <div class="tech-bullet-title"><i class="fa-brands fa-js text-amber"></i> Vanilla JavaScript (ES6+)</div>
+              <p class="tech-bullet-desc">Native modular JavaScript for predictable state flow, high execution speed, zero build-step overhead, and ease of college viva defense.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tier 2: UI / Design System -->
+        <div class="tech-tier-card">
+          <div class="tier-header">
+            <div class="tier-icon"><i class="fa-solid fa-palette"></i></div>
+            <div>
+              <span class="tier-tag">Layer 02</span>
+              <h3 class="tier-title">UI & Design System</h3>
+            </div>
+          </div>
+          <ul class="tech-features-list">
+            <li>
+              <div class="tech-bullet-title"><i class="fa-solid fa-vector-square text-cyan"></i> Dynamic SVG Vector Artboard</div>
+              <p class="tech-bullet-desc">Resolution-independent Scalable Vector Graphics for instant layered sneaker rendering with zero raster pixelation at any display scale.</p>
+            </li>
+            <li>
+              <div class="tech-bullet-title"><i class="fa-solid fa-mobile-screen-button text-purple"></i> Adaptive Responsive Engine</div>
+              <p class="tech-bullet-desc">Mobile-first fluid layouts with tailored breakpoints for 320px smartphones, tablets, laptops, and ultra-wide desktop monitors.</p>
+            </li>
+            <li>
+              <div class="tech-bullet-title"><i class="fa-solid fa-icons text-green"></i> Modern Card-Based Ergonomics</div>
+              <p class="tech-bullet-desc">Curated streetwear aesthetic combining deep obsidian charcoals, electric solar orange accents, crisp typography (Outfit & Inter), and soft drop shadows.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tier 3: Functionality & State -->
+        <div class="tech-tier-card">
+          <div class="tier-header">
+            <div class="tier-icon"><i class="fa-solid fa-gears"></i></div>
+            <div>
+              <span class="tier-tag">Layer 03</span>
+              <h3 class="tier-title">Functionality & State</h3>
+            </div>
+          </div>
+          <ul class="tech-features-list">
+            <li>
+              <div class="tech-bullet-title"><i class="fa-solid fa-calculator text-orange"></i> Reactive Price Calculation Engine</div>
+              <p class="tech-bullet-desc">Real-time summation listener recalculating base, premium color, custom sole, laces, decals, and monogram add-ons with zero latency.</p>
+            </li>
+            <li>
+              <div class="tech-bullet-title"><i class="fa-solid fa-database text-cyan"></i> LocalStorage Persistence</div>
+              <p class="tech-bullet-desc">Persists cart items, user configurations, and saved designs locally in the client browser session across page reloads.</p>
+            </li>
+            <li>
+              <div class="tech-bullet-title"><i class="fa-solid fa-clipboard-check text-green"></i> Form Validation & Order Engine</div>
+              <p class="tech-bullet-desc">Robust client-side regex checking for phone, email, and shipping address, culminating in a mock Order ID confirmation generator.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Technical Architecture Flow Diagram -->
+      <div class="architecture-diagram-card">
+        <h3 class="diag-title"><i class="fa-solid fa-diagram-project"></i> Application Data & Event Flow Pipeline</h3>
+        <div class="pipeline-grid">
+          <div class="pipe-node">
+            <span class="node-step">01. User Input</span>
+            <div class="node-box">Color, Sole, Laces, Model & Text Selection</div>
+          </div>
+          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="pipe-node">
+            <span class="node-step">02. State Machine</span>
+            <div class="node-box">Centralized <code>currentCustomization</code> State Object</div>
+          </div>
+          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="pipe-node">
+            <span class="node-step">03. DOM & SVG Render</span>
+            <div class="node-box">Direct SVG Node Attribute & Text Re-rendering</div>
+          </div>
+          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="pipe-node">
+            <span class="node-step">04. Price Calculator</span>
+            <div class="node-box">Parametric Cost Summation & Breakdown Update</div>
+          </div>
+          <div class="pipe-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <div class="pipe-node">
+            <span class="node-step">05. Cart & Storage</span>
+            <div class="node-box">Cart Dispatch & <code>localStorage</code> Synchronization</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FUTURE ENHANCEMENTS SECTION (REQUIREMENT 6)
+       ======================================================== -->
+  <section class="section future-enhancements-section" id="future">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle"><i class="fa-solid fa-rocket"></i> Requirement 6: Roadmap</span>
+        <h2 class="section-title">Future Enhancements & Scalability</h2>
+        <p class="section-desc">Strategic technological roadmap designed for scaling SoleCraft into an industry-grade enterprise customizer.</p>
+      </div>
+
+      <!-- 11 Attractive Future Enhancement Cards with Icons -->
+      <div class="future-grid">
+        <!-- 1. AI Sneaker Recommendations -->
+        <div class="future-card">
+          <div class="future-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <div class="future-phase">Phase 2.0</div>
+          <h3 class="future-title">AI-Powered Recommendations</h3>
+          <p class="future-desc">Machine learning models that analyze user browsing habits, current street fashion trends, and outfit colors to suggest personalized sneaker palettes.</p>
+        </div>
+
+        <!-- 2. AR / Virtual Try-On -->
+        <div class="future-card highlight">
+          <div class="future-icon"><i class="fa-solid fa-vr-cardboard"></i></div>
+          <div class="future-phase">Phase 2.1</div>
+          <h3 class="future-title">AR / Virtual Try-On</h3>
+          <p class="future-desc">WebXR foot-tracking camera integration enabling users to project their custom sneakers onto their feet in real-time augmented reality before purchasing.</p>
+        </div>
+
+        <!-- 3. 3D WebGL Customization -->
+        <div class="future-card">
+          <div class="future-icon"><i class="fa-solid fa-cube"></i></div>
+          <div class="future-phase">Phase 2.2</div>
+          <h3 class="future-title">3D WebGL / Three.js Engine</h3>
+          <p class="future-desc">Full 360-degree interactive 3D sneaker meshes with PBR realistic leather textures, ambient reflections, and micro-stitching ray-casting.</p>
+        </div>
+
+        <!-- 4. User Accounts & Saved Designs -->
+        <div class="future-card">
+          <div class="future-icon"><i class="fa-solid fa-user-shield"></i></div>
+          <div class="future-phase">Phase 2.3</div>
+          <h3 class="future-title">User Accounts & Cloud Vault</h3>
+          <p class="future-desc">Secure cloud authentication allowing sneakerheads to save customized design prototypes, create public design galleries, and share design links.</p>
+        </div>
+
+        <!-- 5. AI-Generated Generative Designs -->
+        <div class="future-card">
+          <div class="future-icon"><i class="fa-solid fa-brain"></i></div>
+          <div class="future-phase">Phase 2.4</div>
+          <h3 class="future-title">AI-Generated Sneaker Designs</h3>
+          <p class="future-desc">Text-to-pattern generative AI prompts (e.g. "Cyberpunk Tokyo Neon") automatically synthesizing bespoke sneaker print textures.</p>
+        </div>
+
+        <!-- 6. Computer Vision Size Scanner -->
+        <div class="future-card">
+          <div class="future-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+          <div class="future-phase">Phase 2.5</div>
+          <h3 class="future-title">Size Recommendation System</h3>
+          <p class="future-desc">Smartphone camera scanning that measures foot arches and dimensions down to millimeter precision to eliminate return size mismatches.</p>
+        </div>
+
+        <!-- 7. Real-Time Order Tracking -->
+        <div class="future-card">
+          <div class="future-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+          <div class="future-phase">Phase 2.6</div>
+          <h3 class="future-title">Real-Time Order Tracking</h3>
+          <p class="future-desc">Live production milestone tracking displaying when the sneaker upper is cut, sole vulcanized, text embroidered, and courier dispatched.</p>
+        </div>
+
+        <!-- 8. Multiple Payment Gateways -->
+        <div class="future-card">
+          <div class="future-icon"><i class="fa-solid fa-credit-card"></i></div>
+          <div class="future-phase">Phase 3.0</div>
+          <h3 class="future-title">Multiple Payment Gateways</h3>
+          <p class="future-desc">Production integration with Razorpay, Stripe, Apple Pay, Google Pay, UPI deep links, and Buy Now Pay Later (BNPL) credit options.</p>
+        </div>
+
+        <!-- 9. Loyalty and Rewards Program -->
+        <div class="future-card">
+          <div class="future-icon"><i class="fa-solid fa-trophy"></i></div>
+          <div class="future-phase">Phase 3.1</div>
+          <h3 class="future-title">SoleCraft Club & Rewards</h3>
+          <p class="future-desc">Tiered membership club awarding "Craft Points" for each customized pair, unlocking exclusive vintage base silhouettes and drop invites.</p>
+        </div>
+
+        <!-- 10. Sustainable / Recycled Sneaker Line -->
+        <div class="future-card">
+          <div class="future-icon"><i class="fa-solid fa-seedling"></i></div>
+          <div class="future-phase">Phase 3.2</div>
+          <h3 class="future-title">Sustainable Recycled Collection</h3>
+          <p class="future-desc">Circular economy materials including ocean-plastic knit uppers, mushroom mycelium leather, and 100% biodegradable algae foam soles.</p>
+        </div>
+
+        <!-- 11. Cross-Platform Mobile Application -->
+        <div class="future-card highlight">
+          <div class="future-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <div class="future-phase">Phase 3.3</div>
+          <h3 class="future-title">Native Mobile Application</h3>
+          <p class="future-desc">Dedicated iOS & Android React Native app with haptic customization feedback, push notifications for custom drops, and Apple Pay Express checkout.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       WHY CHOOSE SOLECRAFT SECTION (PROJECT OVERVIEW)
+       ======================================================== -->
+  <section class="section why-choose-section" id="why-choose">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Unmatched Value Proposition</span>
+        <h2 class="section-title">Why Choose SoleCraft?</h2>
+        <p class="section-desc">We bridge digital innovation with bespoke Italian-grade shoe craftsmanship.</p>
+      </div>
+
+      <div class="features-quad-grid">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3 class="feature-heading">Instant Zero-Lag Visualizer</h3>
+          <p class="feature-text">Our proprietary vector rendering pipeline guarantees instant 60fps color updates without waiting for server-side 3D render queues.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-stamp"></i></div>
+          <h3 class="feature-heading">Bespoke Laser Monogramming</h3>
+          <p class="feature-text">Every custom text is precision-engraved onto premium leather badges, ensuring a lifelong 1-of-1 personalized sneaker that cannot be copied.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h3 class="feature-heading">Zero Overproduction Waste</h3>
+          <p class="feature-text">Because every single sneaker is made-to-order, we eliminate 98% of the landfill dead stock typical of traditional fast-fashion footwear brands.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="fa-solid fa-shield-heart"></i></div>
+          <h3 class="feature-heading">5-Day Handcraft Turnaround</h3>
+          <p class="feature-text">Our agile micro-manufacturing workshop assembles, stitches, vulcanizes, and quality-inspects your custom pair in just 5 business days.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       CUSTOMER REVIEWS & SOCIAL PROOF
+       ======================================================== -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Loved by Creators & Sneakerheads</span>
+        <h2 class="section-title">Customer Reviews</h2>
+        <p class="section-desc">See what early beta testers and streetwear enthusiasts have to say about their SoleCraft pairs.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"Being able to pick the exact gum sole and engrave my rap moniker 'NEO' on the heel is unbelievable. The live customizer didn't lag once on my phone!"</p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">RK</div>
+            <div class="reviewer-info">
+              <strong class="reviewer-name">Rohan Kapoor</strong>
+              <span class="reviewer-role"><i class="fa-solid fa-circle-check text-accent"></i> Verified Customizer</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"The dynamic price breakdown is so transparent. You know exactly what each premium lace or sole adds to the total. Received my pair in 6 days and the stitching is pristine."</p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">AS</div>
+            <div class="reviewer-info">
+              <strong class="reviewer-name">Ananya Sharma</strong>
+              <span class="reviewer-role"><i class="fa-solid fa-circle-check text-accent"></i> Sneaker Enthusiast</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">"As an engineering student who loves fashion tech, SoleCraft is a masterclass in UI responsiveness and clean DOM manipulation. Outstanding project implementation!"</p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">VM</div>
+            <div class="reviewer-info">
+              <strong class="reviewer-name">Vikram Mehta</strong>
+              <span class="reviewer-role"><i class="fa-solid fa-circle-check text-accent"></i> UI/UX Designer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       ACADEMIC PRESENTATION SUPPORT SECTION (REQUIRED)
+       ======================================================== -->
+  <section class="section academic-info-section" id="project-info">
+    <div class="container">
+      <div class="academic-project-box">
+        <div class="academic-box-header">
+          <div class="box-badge"><i class="fa-solid fa-graduation-cap"></i> Academic Evaluation Panel</div>
+          <h2 class="academic-box-title">Project Information & IBM Evaluation Rubric</h2>
+          <p class="academic-box-desc">Structured documentation specifically organized for college viva, evaluator review, and IBM project assessment.</p>
+        </div>
+
+        <div class="academic-table-wrap">
+          <table class="rubric-table">
+            <tbody>
+              <tr>
+                <td class="rubric-header"><i class="fa-solid fa-bookmark text-orange"></i> Project Title</td>
+                <td class="rubric-content"><strong>SoleCraft – Custom Sneaker E-Commerce Platform</strong></td>
+              </tr>
+              <tr>
+                <td class="rubric-header"><i class="fa-solid fa-compass text-cyan"></i> Project Overview</td>
+                <td class="rubric-content">An online direct-to-consumer platform empowering customers to design, customize, and preview bespoke sneakers with dynamic pricing and demo ordering instead of purchasing static catalog products.</td>
+              </tr>
+              <tr>
+                <td class="rubric-header"><i class="fa-solid fa-bullseye text-purple"></i> Business Need</td>
+                <td class="rubric-content">Addresses modern consumer hunger for personalized footwear, higher e-commerce engagement, elimination of dead stock inventory, and differentiation in saturated fashion retail.</td>
+              </tr>
+              <tr>
+                <td class="rubric-header"><i class="fa-solid fa-wand-magic-sparkles text-green"></i> Proposed Solution</td>
+                <td class="rubric-content">A web-based interactive sneaker customization engine featuring real-time SVG vector rendering, dynamic price calculation, cart management, client-side validation, and mock checkout.</td>
+              </tr>
+              <tr>
+                <td class="rubric-header"><i class="fa-solid fa-code text-amber"></i> Technology Stack</td>
+                <td class="rubric-content">Frontend: HTML5, CSS3, JavaScript (ES6+), DOM Manipulation, SVG Graphics API, LocalStorage API, Responsive CSS Grid/Flexbox, Form Validation Regex.</td>
+              </tr>
+              <tr>
+                <td class="rubric-header"><i class="fa-solid fa-rocket text-blue"></i> Future Enhancements</td>
+                <td class="rubric-content">AI sneaker recommendations, WebXR augmented reality try-on, Three.js 3D meshes, user accounts with cloud design vault, computer vision foot sizing, and mobile app.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="academic-box-footer">
+          <button class="btn btn-primary" id="open-viva-modal-btn">
+            <i class="fa-solid fa-presentation-screen"></i> Launch Academic Presentation Mode (Viva Helper)
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       CALL-TO-ACTION SECTION
+       ======================================================== -->
+  <section class="section cta-section" id="cta">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-glow"></div>
+        <div class="cta-content text-center">
+          <span class="cta-badge"><i class="fa-solid fa-fire"></i> Limited Crafting Slots Available</span>
+          <h2 class="cta-title">Ready to Design Your 1-of-1 Sneaker?</h2>
+          <p class="cta-subtitle">Jump straight into the Studio Customizer. Select your colors, choose your sole, add your name, and own your style.</p>
+          <a href="#customize" class="btn btn-accent btn-lg">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Launch Customizer Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <!-- Col 1: Brand & Tagline -->
+      <div class="footer-col brand-col">
+        <div class="brand-logo footer-logo">
+          <div class="logo-mark"><i class="fa-solid fa-shoe-prints"></i></div>
+          <div class="logo-text">
+            <span class="logo-title">Sole<span class="accent-text">Craft</span></span>
+            <span class="logo-tagline">Design It. Wear It. Own It.</span>
+          </div>
+        </div>
+        <p class="footer-about">
+          SoleCraft is a fictional sneaker customization e-commerce platform built as an academic demonstration for an IBM project submission.
+        </p>
+        <div class="footer-socials">
+          <a href="#top" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+          <a href="#top" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#top" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#top" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Academic Requirements Sitemap -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Academic Requirements</h4>
+        <ul class="footer-links">
+          <li><a href="#top">1. Project Overview</a></li>
+          <li><a href="#business-need">2. Business Need</a></li>
+          <li><a href="#customize">3. Proposed Solution</a></li>
+          <li><a href="#technology">4. Technology Stack</a></li>
+          <li><a href="#future">5. Future Enhancements</a></li>
+          <li><a href="#project-info">Academic Defense Data</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Sneaker Models -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Sneaker Silhouettes</h4>
+        <ul class="footer-links">
+          <li><a href="#sneakers" class="footer-model-link" data-model="classic">SoleCraft Classic (₹2,499)</a></li>
+          <li><a href="#sneakers" class="footer-model-link" data-model="street">StreetFlex (₹2,799)</a></li>
+          <li><a href="#sneakers" class="footer-model-link" data-model="runner">Urban Runner (₹2,999)</a></li>
+          <li><a href="#sneakers" class="footer-model-link" data-model="runner">Velocity (₹3,199)</a></li>
+          <li><a href="#sneakers" class="footer-model-link" data-model="classic">Edge Pro (₹3,499)</a></li>
+          <li><a href="#sneakers" class="footer-model-link" data-model="street">AirStreet (₹3,799)</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Project Info & Disclaimer -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Academic Notice</h4>
+        <p class="footer-disclaimer">
+          <strong>IBM Academic Project Submission</strong><br>
+          Developed with HTML5, CSS3, & Modern JavaScript DOM Manipulation.<br>
+          LocalStorage enabled for demo transactions. No real payments are processed.
+        </p>
+        <div class="footer-status-pill">
+          <span class="status-pulse"></span>
+          <span>Evaluation Ready • 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>© 2026 SoleCraft Sneakers Inc. Fictional Academic Project. All rights reserved.</p>
+        <p>Built with <i class="fa-solid fa-heart text-accent"></i> for IBM College Evaluation</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       SHOPPING CART SLIDE-OVER DRAWER (REQUIREMENT 4)
+       ======================================================== -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Cart Drawer" aria-hidden="true">
+    <div class="cart-header">
+      <div class="cart-title-wrap">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <h3>Your Shopping Cart</h3>
+        <span class="cart-badge-count" id="drawer-item-count">0 items</span>
+      </div>
+      <button class="cart-close-btn" id="cart-close-btn" aria-label="Close Shopping Cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Cart Items Scrollable Container -->
+    <div class="cart-body" id="cart-items-container">
+      <!-- Dynamic Cart Items Rendered Here via JS -->
+      <!-- Empty Cart Placeholder (Shown when cart is empty) -->
+      <div class="empty-cart-state" id="empty-cart-view">
+        <div class="empty-icon"><i class="fa-solid fa-shoe-prints"></i></div>
+        <h4>Your Cart is Empty</h4>
+        <p>You haven't customized any sneakers yet. Head over to the studio to craft your 1-of-1 pair!</p>
+        <a href="#customize" class="btn btn-primary btn-sm" id="empty-cart-customize-btn">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Customize A Sneaker
+        </a>
+      </div>
+    </div>
+
+    <!-- Cart Footer with Totals & Checkout -->
+    <div class="cart-footer" id="cart-footer-panel">
+      <div class="cart-summary-lines">
+        <div class="cart-sum-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal-val">₹0</span>
+        </div>
+        <div class="cart-sum-row">
+          <span>Handcrafted Assembly</span>
+          <span class="text-success">FREE</span>
+        </div>
+        <div class="cart-sum-row">
+          <span>Estimated Taxes (GST Included)</span>
+          <span id="cart-tax-val">₹0</span>
+        </div>
+        <div class="cart-sum-row total-row">
+          <span>Grand Total</span>
+          <span class="total-price" id="cart-grand-total">₹0</span>
+        </div>
+      </div>
+
+      <div class="cart-actions-group">
+        <button class="btn btn-accent btn-block btn-lg" id="proceed-to-checkout-btn">
+          <i class="fa-solid fa-lock"></i> Proceed to Demo Checkout
+        </button>
+        <button class="btn btn-secondary btn-block btn-sm" id="clear-cart-btn">
+          <i class="fa-solid fa-trash-can"></i> Clear Cart
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================
+       DEMO CHECKOUT MODAL (REQUIREMENT 4)
+       ======================================================== -->
+  <div class="modal-backdrop" id="checkout-modal-backdrop" aria-hidden="true">
+    <div class="modal-card checkout-modal-card" role="dialog" aria-modal="true" aria-labelledby="checkout-modal-title">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-shield-halved text-accent"></i>
+          <div>
+            <h3 id="checkout-modal-title">Demo Order Checkout</h3>
+            <span class="modal-subtitle">Academic Evaluation Demo — No Real Payment Charged</span>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="checkout-close-btn" aria-label="Close Checkout">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Checkout Form -->
+      <form id="checkout-form" novalidate>
+        <div class="modal-body-scroll">
+          
+          <!-- Order Summary Pill inside Checkout -->
+          <div class="checkout-order-summary-strip">
+            <div>
+              <span class="strip-label">Items in Order:</span>
+              <strong id="checkout-item-count-badge">1 sneaker</strong>
+            </div>
+            <div>
+              <span class="strip-label">Amount Payable:</span>
+              <strong class="strip-amount" id="checkout-total-payable">₹2,899</strong>
+            </div>
+          </div>
+
+          <div class="form-section-title"><i class="fa-solid fa-user"></i> Contact & Shipping Details</div>
+          
+          <div class="form-row-2">
+            <!-- Full Name -->
+            <div class="form-group">
+              <label for="checkout-name">Full Name <span class="required">*</span></label>
+              <input type="text" id="checkout-name" name="name" placeholder="e.g. Alex Morgan" required>
+              <span class="form-error-msg" id="error-name">Please enter your full name.</span>
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+              <label for="checkout-email">Email Address <span class="required">*</span></label>
+              <input type="email" id="checkout-email" name="email" placeholder="e.g. alex@example.com" required>
+              <span class="form-error-msg" id="error-email">Please enter a valid email address.</span>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <!-- Phone Number -->
+            <div class="form-group">
+              <label for="checkout-phone">Phone Number (10 digits) <span class="required">*</span></label>
+              <input type="tel" id="checkout-phone" name="phone" placeholder="e.g. 9876543210" maxlength="10" required>
+              <span class="form-error-msg" id="error-phone">Please enter a valid 10-digit phone number.</span>
+            </div>
+            <!-- City / State -->
+            <div class="form-group">
+              <label for="checkout-city">City & State <span class="required">*</span></label>
+              <input type="text" id="checkout-city" name="city" placeholder="e.g. Bangalore, Karnataka" required>
+              <span class="form-error-msg" id="error-city">Please enter your city and state.</span>
+            </div>
+          </div>
+
+          <!-- Street Address -->
+          <div class="form-group">
+            <label for="checkout-address">Delivery Street Address <span class="required">*</span></label>
+            <textarea id="checkout-address" name="address" rows="2" placeholder="House/Flat number, Street name, Landmark" required></textarea>
+            <span class="form-error-msg" id="error-address">Please enter your full delivery address.</span>
+          </div>
+
+          <!-- Postal Code -->
+          <div class="form-group">
+            <label for="checkout-pincode">Postal PIN Code (6 digits) <span class="required">*</span></label>
+            <input type="text" id="checkout-pincode" name="pincode" placeholder="e.g. 560001" maxlength="6" required>
+            <span class="form-error-msg" id="error-pincode">Please enter a valid 6-digit PIN code.</span>
+          </div>
+
+          <div class="form-section-title"><i class="fa-solid fa-credit-card"></i> Payment Method (Academic Demo)</div>
+          
+          <div class="payment-methods-grid">
+            <label class="payment-method-option active">
+              <input type="radio" name="paymentMethod" value="cod" checked>
+              <div class="pm-box">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <div class="pm-text">
+                  <strong>Cash on Delivery (Demo)</strong>
+                  <span>Pay upon handcrafted delivery</span>
+                </div>
+              </div>
+            </label>
+
+            <label class="payment-method-option">
+              <input type="radio" name="paymentMethod" value="upi">
+              <div class="pm-box">
+                <i class="fa-solid fa-qrcode"></i>
+                <div class="pm-text">
+                  <strong>UPI / QR (Demo)</strong>
+                  <span>GPay, PhonePe, Paytm simulation</span>
+                </div>
+              </div>
+            </label>
+
+            <label class="payment-method-option">
+              <input type="radio" name="paymentMethod" value="card">
+              <div class="pm-box">
+                <i class="fa-solid fa-credit-card"></i>
+                <div class="pm-text">
+                  <strong>Credit / Debit Card (Demo)</strong>
+                  <span>Instant simulated gateway check</span>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <!-- Demo Disclaimer Alert -->
+          <div class="demo-disclaimer-box">
+            <i class="fa-solid fa-info-circle"></i>
+            <span><strong>Academic Demonstration:</strong> This checkout validates form logic and simulates an order lifecycle. No real money or banking credentials are collected.</span>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="cancel-checkout-btn">Cancel</button>
+          <button type="submit" class="btn btn-accent btn-lg" id="submit-order-btn">
+            <i class="fa-solid fa-circle-check"></i> Place Demo Order
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       ORDER CONFIRMATION MODAL (REQUIREMENT 4)
+       ======================================================== -->
+  <div class="modal-backdrop" id="confirmation-modal-backdrop" aria-hidden="true">
+    <div class="modal-card confirmation-card" role="dialog" aria-modal="true">
+      <div class="confirmation-body text-center">
+        
+        <!-- Animated Success Badge -->
+        <div class="success-animation-wrap">
+          <div class="success-circle">
+            <i class="fa-solid fa-check"></i>
+          </div>
+        </div>
+
+        <span class="conf-badge"><i class="fa-solid fa-award"></i> Order Successfully Placed</span>
+        <h2 class="conf-title">Thank You for Your Order!</h2>
+        <p class="conf-subtitle">Your custom handcrafted sneakers have been queued in the SoleCraft master workshop.</p>
+
+        <!-- Order ID Highlight Card -->
+        <div class="order-id-ticket">
+          <div class="ticket-row">
+            <span class="ticket-label">Generated Order ID:</span>
+            <strong class="ticket-id" id="confirmed-order-id">SC-IBM-2026-89412</strong>
+          </div>
+          <div class="ticket-row">
+            <span class="ticket-label">Estimated Handcrafted Dispatch:</span>
+            <span class="ticket-val" id="confirmed-delivery-date">5 - 7 Business Days</span>
+          </div>
+          <div class="ticket-row">
+            <span class="ticket-label">Customer Name:</span>
+            <span class="ticket-val" id="confirmed-customer-name">Alex Morgan</span>
+          </div>
+          <div class="ticket-row">
+            <span class="ticket-label">Payment Mode:</span>
+            <span class="ticket-val" id="confirmed-payment-method">Cash on Delivery (Demo)</span>
+          </div>
+          <div class="ticket-row total-ticket-row">
+            <span class="ticket-label">Total Amount:</span>
+            <strong class="ticket-amount" id="confirmed-total-amount">₹2,899</strong>
+          </div>
+        </div>
+
+        <!-- Custom Sneaker Specs Summary -->
+        <div class="conf-specs-box" id="confirmed-items-summary">
+          <!-- Populated via JS -->
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="conf-actions-group">
+          <button class="btn btn-secondary" id="print-receipt-btn">
+            <i class="fa-solid fa-print"></i> Print Receipt / PDF
+          </button>
+          <button class="btn btn-primary" id="continue-shopping-btn">
+            <i class="fa-solid fa-paintbrush"></i> Create Another Design
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       ACADEMIC PRESENTATION DEFENSE MODAL (VIVA HELPER)
+       ======================================================== -->
+  <div class="modal-backdrop" id="academic-modal-backdrop" aria-hidden="true">
+    <div class="modal-card academic-modal-card" role="dialog" aria-modal="true">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-graduation-cap text-accent"></i>
+          <div>
+            <h3>SoleCraft Academic Defense Guide (IBM Project)</h3>
+            <span class="modal-subtitle">Comprehensive Viva & Evaluation Reference</span>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="academic-modal-close-btn" aria-label="Close Academic Modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body-scroll academic-viva-content">
+        <!-- Rubric 1 -->
+        <div class="viva-section">
+          <h4><i class="fa-solid fa-1"></i> 1. Project Overview</h4>
+          <p><strong>Concept:</strong> SoleCraft is an online direct-to-consumer customization portal engineered to replace rigid, pre-designed sneaker purchasing with parametric, real-time bespoke design.</p>
+          <p><strong>Key Demonstrations:</strong> 6 base models, live color swatches, sole & lace pickers, real-time custom text engraving, dynamic itemized price calculator, cart drawer, and validated demo checkout.</p>
+        </div>
+
+        <!-- Rubric 2 -->
+        <div class="viva-section">
+          <h4><i class="fa-solid fa-2"></i> 2. Business Need</h4>
+          <p><strong>Problem:</strong> Traditional e-commerce relies on mass manufacturing, resulting in dead-stock markdown losses, identical fashion products, and low emotional engagement.</p>
+          <p><strong>SoleCraft Solution:</strong> Direct-to-consumer on-demand assembly, zero dead-stock, 3.8x longer customer dwell time, and bespoke digital self-expression.</p>
+        </div>
+
+        <!-- Rubric 3 -->
+        <div class="viva-section">
+          <h4><i class="fa-solid fa-3"></i> 3. Proposed Solution & Customizer</h4>
+          <p><strong>Customization Variables:</strong> Model (Classic, Street, Runner), Upper Colors (White, Black, Red, Blue, Green, Beige), Accents, Soles (White, Black, Gum), Laces, Design Patterns (Minimal, Contrast, Street, Sport), and Monogram text.</p>
+          <p><strong>Vector Engine:</strong> Pure SVG node manipulation updates color and text attributes with 0ms server round-trip delay.</p>
+        </div>
+
+        <!-- Rubric 4 -->
+        <div class="viva-section">
+          <h4><i class="fa-solid fa-4"></i> 4. Technology Stack & Implementation</h4>
+          <p><strong>Stack:</strong> HTML5 (Semantics & SVG), CSS3 (Variables, Flexbox, Grid, Animations), Vanilla JavaScript (Modular ES6+ functions, DOM Event Listeners, State Machine, LocalStorage API).</p>
+          <p><strong>Validation:</strong> Client-side regular expression parsing for email format, 10-digit mobile number, and 6-digit postal code.</p>
+        </div>
+
+        <!-- Rubric 5 -->
+        <div class="viva-section">
+          <h4><i class="fa-solid fa-5"></i> 5. Future Enhancements</h4>
+          <p><strong>Scalability:</strong> 11 strategic roadmap items including AI style recommendations, WebXR Augmented Reality foot try-on, Three.js 360° 3D mesh customization, cloud user accounts, and recycled sneaker materials.</p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="academic-modal-gotit-btn">Back to Website</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Bundle -->
+  <script src="js/app.js"></script>
+</body>
+</html>
